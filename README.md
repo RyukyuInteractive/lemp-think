@@ -4,7 +4,8 @@ run:
 
 ```
 $ git clone git@github.com:RyukyuInteractive/lemp-think.git
-$ cd lemp-think
+$ cd lemp-think/code
+$ composer install
 $ docker-compose up
 ```
 
