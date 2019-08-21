@@ -27,21 +27,25 @@ class ExceptionHandle extends Handle
 {
     /**
      * 不需要记录信息（日志）的异常类列表
+     *
      * @var array
      */
-    protected $ignoreReport = [
-        HttpException::class,
-        HttpResponseException::class,
-        ModelNotFoundException::class,
-        DataNotFoundException::class,
-        ValidateException::class,
-    ];
+    protected $ignoreReport
+        = [
+            HttpException::class,
+            HttpResponseException::class,
+            ModelNotFoundException::class,
+            DataNotFoundException::class,
+            ValidateException::class,
+        ];
 
     /**
      * 记录异常信息（包括日志或者其它方式记录）
      *
      * @access public
-     * @param  Throwable $exception
+     *
+     * @param  Throwable  $exception
+     *
      * @return void
      */
     public function report(Throwable $exception): void
@@ -54,8 +58,10 @@ class ExceptionHandle extends Handle
      * Render an exception into an HTTP response.
      *
      * @access public
-     * @param \think\Request   $request
-     * @param Throwable $e
+     *
+     * @param  \think\Request  $request
+     * @param  Throwable  $e
+     *
      * @return Response
      */
     public function render($request, Throwable $e): Response

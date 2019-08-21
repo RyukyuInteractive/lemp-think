@@ -11,10 +11,10 @@
 
 // 事件定义文件
 return [
-    'bind'      => [
+    'bind' => [
     ],
 
-    'listen'    => [
+    'listen' => [
         'AppInit'  => [],
         'HttpRun'  => [],
         'HttpEnd'  => [],
