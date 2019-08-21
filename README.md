@@ -1,10 +1,10 @@
 # ThinkPHP in LEMP
 
-## Develop
-
 run:
 
 ```
+$ git clone git@github.com:RyukyuInteractive/lemp-think.git
+$ cd lemp-think
 $ docker-compose up
 ```
 
